@@ -4,6 +4,7 @@ from aiohttp import web
 import feedparser
 import yaml
 import logging
+import os
 import time
 import calendar
 from abc import ABC, abstractmethod
@@ -196,7 +197,9 @@ class StatusTracker:
         for monitor in self.monitors:
             monitor.setup(self.app)
 
-        web.run_app(self.app, port=3000)
+        port = int(os.environ.get("PORT", 3000))
+        logger.info(f"Listening on port {port}")
+        web.run_app(self.app, port=port)
 
 
 if __name__ == "__main__":
