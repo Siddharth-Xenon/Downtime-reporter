@@ -1,0 +1,22 @@
+services:
+  - name: OpenAI
+    type: rss
+    url: https://status.openai.com/feed.rss
+
+  - name: AnthropicWebhook
+    type: webhook
+    route: /webhook/anthropic
+    
+  # Local simulator for testing
+  - name: LocalTest
+    type: rss
+    url: http://localhost:8080/feed.xml
+
+  - name: TestWebhook
+    type: webhook
+    route: /webhook/test
+
+  
+
+settings:
+  poll_interval: 5
