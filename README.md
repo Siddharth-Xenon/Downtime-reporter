@@ -12,6 +12,21 @@ It features a **Hybrid Architecture** that runs a web server for incoming webhoo
 -   **Extensible**: Modular `ServiceMonitor` class makes it easy to add new integration types.
 -   **Local Simulator**: Includes a `simulator.py` to test outages without waiting for real downtime.
 
+## Demo
+
+Simulated Downtime with RSS trigger
+
+https://github.com/user-attachments/assets/a834aeec-2b8b-447c-9fb5-569471af1c10
+
+Simluated Downtime with webhook trigger
+
+https://github.com/user-attachments/assets/c64f29c6-9edd-4e2c-80c6-a7462e45412f
+
+
+
+
+
+
 ## 🛠️ Installation
 
 1.  **Clone the repository** (or download the files).
