@@ -11,4 +11,4 @@ COPY . .
 
 # Cloud Run expects the app to listen on the PORT environment variable
 # monitor.py is already configured to read os.environ.get('PORT')
-CMD ["python", "monitor.py"]
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8080"]
